@@ -1,0 +1,65 @@
+/*Alekya Venkatapuram*/
+/*Alekya_Venkatapuram@student.uml.edu*/
+/*GUI-I assignment 4*/
+
+    /* Styling the body tag of the page by inserting a background image and using 'no-repeat' and 'cover', to cover the full webpage*/
+    body 
+{
+	background-image: url("background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        
+      
+}
+
+/*Styling the header by changing font and color*/
+h1{
+    font-family: fantasy;
+    color: coral;
+}
+
+/*Styling the column1 of the 2 columns by giving it a block centered look, by giving a different background color and adding margins and paddings which space the corner of the page and the block as well as the content in the block*/
+.column1of2{
+    
+    background-color: lightpink;
+    
+
+    margin-right: 200px;
+    margin-left: 200px;
+    padding-bottom: 200px;
+    
+    }
+
+/*Styling the image and content in the column 1 using nested selectors such that they appear beside each other*/
+.column1of2 img{
+float:left;
+display: inline-block;
+
+  margin: 15px 15px;
+    padding-top: 20px;
+}
+
+/*Styling the paragraph in column 1 using nested selectors and changing font and appearance*/
+.column1of2 p{
+    margin-top: 50px;
+    padding-top: 30px;
+    font-family: sans-serif;
+    font-size: 120%;
+    
+}
+
+/*Finally styling the 2nd column such that it is attached to the first and has a different background color and such that it appears right side of 1st column*/
+ .column2of2{
+    background-color:coral;
+height:500px;
+width:200px;
+float: right;
+list-style-type:none;
+     margin-top: -500px;
+
+    
+}
+    
+
+
