@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Name: Alekya Venkatapuram
+Gui Progrmming I Assignment6
+Email: Alekya_Venkatapuram@student.uml.edu -->
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<!-- Linking to CSS file -->
+<link type="text/css" rel="stylesheet" href="mult.css">
+
+
+<title>dynamic multiplication table</title>
+</head>
+<body>
+
+<div class="ContentBox">
+<p>
+Enter the start and end values for the horizontal and vertical rows to display the multiplication table
+</p>
+<p>
+<form>
+<!-- Table for selection in the form to enter the values -->
+<table>
+<tr>
+<td></td>
+<td></td>
+<td colspan="10">Top row values:<br></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+    <!-- horizontal text is implemented-->
+<td><input type="text" id="HorizonalStartTextBox" name="HorizonalStartTextBox" class="LimitsTextBox" size="10"></td>
+<td>to</td>
+<td><input type="text" id="HorizonalEndTextBox" name="HorizonalEndTextBox" class="LimitsTextBox" size="10"><br></td>
+</tr>
+<tr>
+<!-- Vertical text is implemented here -->
+<td rowspan="10" style="min-width: 1.1em; position: relative"><div style="transform: rotate(-90deg); transform-origin: 0% 0%; position: absolute; top: 6em;">Left&nbsp;column&nbsp;values</div></td>
+<td><input type="text" id="VerticalStartTextBox" name="VerticalStartTextBox" class="LimitsTextBox" size="10"></td>
+<td></td>
+<td></td>
+<td></td>
+<!--Implementing in vertical fashion-->
+</tr>
+<tr>
+<td style="text-align: center;">to</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><input type="text" id="VerticalEndTextBox" name="VerticalEndTextBox" class="LimitsTextBox" size="10"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<br>
+</form>
+
+</div>
+<!-- Showing the table generated at the end -->
+    <br>
+    <br>
+<div id ="content" class="ContentBox" style="display:none">
+</div>
+    <!-- Link to main jQuery library from Google -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+  <script src="text.js"></script>
+</body>
+</html>

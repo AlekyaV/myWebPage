@@ -1,0 +1,159 @@
+/* Name: Alekya Venkatapuram
+Gui Progrmming I Assignment6
+Email: Alekya_Venkatapuram@student.uml.edu*/
+
+
+/*Styling the background*/
+body 
+{
+  background:  fixed;
+  font-family: monospace;
+  margin-top: 300px;
+  color: aqua;
+}
+
+
+
+h2
+{
+  text-align:center;
+  font-weight: bold;
+  margin: 1em 0;
+  font-size: 2em;
+}
+
+
+
+/* Colors given to the selection boxes while entering values */
+ */
+a:visited,    .PseudoLink:visited { cursor: pointer; text-decoration: underline; color:"orange"; }
+a:link,       .PseudoLink         { cursor: pointer; text-decoration: underline; color:"orange"; }
+a:link:hover, .PseudoLink:hover   { cursor: pointer; text-decoration: underline; color:"orange"; }
+a:active,     .PseudoLink:active  { cursor: pointer; text-decoration: underline; color:"pink"; }
+
+
+
+/* CSS to auto number assignment entries.  Used to modify ordered lists, but it turns out you can't weave lists through tables! 
+ * Basically, we reset a counter to 1 at the start of every AssignmentList.
+ * Then we stick our custom text right before the normal text.
+ */
+.AssignmentList
+{
+  counter-reset: AssignmentListCounter;
+  counter-increment: AssignmentListCounter;
+}
+.AssignmentList .AssignmentEntry
+{
+  list-style: none;
+}
+.AssignmentList  .AssignmentEntry:before
+{
+  content: "Assignment " counter(AssignmentListCounter) ": ";
+  counter-increment: AssignmentListCounter;
+}
+
+
+/* The style for generic boxes of content.
+ * There's a rounded white border and a gray background. */
+.ContentBox
+{
+  margin: 30px 150px 30px 150px;
+  border-radius: 32px;
+  box-shadow: 8px 8px 4px #000;
+  
+  /* This color is just a bit lighter than the image used as the page's background. */
+  background-color: #3F3F3F;
+    
+  border: 3px solid white;
+  text-align:left;
+  padding: 15px;
+}
+
+
+
+
+.ExtraInfoBoxContainer 
+{ 
+  position: relative; 
+}
+
+/* The info box itself. */
+.ExtraInfoBox 
+{ 
+
+  /* Position absolutely so we don't completely defeat the purpose of this thing by having it take up space. */
+  position: absolute; 
+  
+  transition: transform 0.5s ease-out; 
+  
+  border-radius: 7px;
+  box-shadow: 8px 8px 4px #000;
+    
+  /* This color is just a bit lighter than the color of ContentBox. */
+  background-color: #494949;
+    
+  border: 3px solid white;
+  text-align:left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.ExtraInfoRadioButton:checked+.ExtraInfoBoxContainer>.ExtraInfoBox
+{ 
+  
+  transition: transform 0.5s ease-in; /* cubic-bezier(0,.28,.58,1) */
+  
+  /* The transformation when visible */
+  transform: perspective(1200px) rotateY(0deg) scaleY(1);
+  z-index: 2;
+}
+
+/* The close button placed at the top right of ExtraInfoBox.  Its position is absolute and is placed at the top right. */
+.ExtraInfoBoxCloseButton
+{
+  position: absolute;
+  right: 9px;
+  top: 9px;
+}
+
+
+.darkShadedTable
+{
+  border-collapse: collapse;
+}
+
+.darkShadedTable th
+{
+ min-width: 2em;
+ height: 2em;  
+}
+
+
+
+
+nav
+{
+  margin: 12px 150px 28px 150px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 13px #000;
+  
+  
+  padding: 6px;
+  
+  text-align: center;
+}
+
+nav a
+{
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-right: -1px; 
+  white-space: nowrap; 
+  line-height: 170%; 
+}
+
+
+
