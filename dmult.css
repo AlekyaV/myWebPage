@@ -1,0 +1,83 @@
+/*                                                                                                                                                     
+        Alekya Venkatapuram
+          Alekya_Venkatapuram@student.uml.edu
+           GUI-I assignment 7
+            11/15/2016
+*/
+
+body.main {
+    min-height: 100%;
+    margin-bottom: 2em;
+    position: relative;
+    
+}
+
+h1 {
+    color: red;
+    font-size: 75px;
+    font-family: monospace;
+    
+    
+}
+
+html, body {
+    background-color: green;
+    font-family: 'Josefins Sans', sans-serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.center {
+    text-align: center;
+}
+
+
+
+.clearfooter {
+    height: 100px;
+    clear: both;
+}
+
+img.move-top {
+    float: left;
+    margin-right: 100px;
+}
+
+div.move-left {
+    position: relative;
+    float: left;
+    font-size: 12px;
+    margin-right: 50px;
+}
+
+span.bold-this {
+    font-weight: bolder;
+}
+
+#slider {
+    margin: 10px;
+}
+.ui-slider-horizontal{ 
+    height: 15px;
+    width: 200px;
+}
+
+.ui-slider .ui-slider-handle {
+    height: 5px;
+    width: 10px;
+    padding-left: 5px;
+}
+
+
+td {
+  background: red;
+  border: 1px solid white;
+  height: 50px;
+  width: 50px;
+  z-index: 3;
+  
+}
+
+

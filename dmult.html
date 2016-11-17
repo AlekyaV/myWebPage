@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <!-- link to css -->
+        <link type="text/css" rel="stylesheet" href="dmult.css">
+        
+        <!--                                                                                                                                                           
+            Alekya Venkatapuram
+          Alekya_Venkatapuram@student.uml.edu
+           GUI-I assignment 7
+            11/15/2016
+
+        -->
+         <title>Assignment 7</title>
+</head>
+
+
+<body class="main">
+        
+
+        <h1>Dynamic Multiplication Table</h1>
+
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Multiplication Table</a> </li>
+            </ul>
+            <div id="tabs-1">
+               <!--Using a form to take 4 values as input -->
+                <form id="mulTab" > 
+                    <p>Horizonal Row</p>
+                    <p>Min Range: <input type="text" size="10" value="" id="rowSt" name="rowSt"/></p>
+                    <div id="1"></div>
+                    
+                    <p>Max Range: <input type="text" size="10" value="" id="rowEn" name="rowEn"/></p>
+                    <div id="2"></div>
+                    
+                    <p>Vertical Column</p>
+                    <p>Minimum Range:<input type="text" size="10" value="" id="colSt" name="colSt"/></p>
+                    <div id="3"></div>
+
+                    <p>Max Range: <input type="text" size="10" value="" id="colEn" name="colEn"/></p>
+                    <div id="4"></div>
+                    
+                    <input type="submit" id="submit" value="submit" />
+                    
+                </form>
+
+    
+                
+
+            </div>
+        </div>
+    
+        <!--  Footer -->
+    
+        <div class="clearfooter"></div>
+        
+    <!--jquery java script -->
+    
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="jquery.validate.js"></script>
+        <script src="jquery-ui.js"></script>
+        <script src='hw7.js'></script>
+
+         </body>
+</html>
