@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <!-- link to css -->
+        <link type="text/css" rel="stylesheet" href="multslider.css">
+        
+<!--                                                                                                                                                           
+            Alekya Venkatapuram
+          Alekya_Venkatapuram@student.uml.edu
+           GUI-I assignment 8
+            11/15/2016
+
+        -->
+        <link rel="stylesheet" type="text/css"
+   href="http://fonts.googleapis.com/css?family=Advent+Pro%7CBangers%7CSlackey%7CSigmar+One%7CRighteous%7CUbuntu">
+
+
+  <!-- Latest compiled and minified CSS 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
+
+  <!-- Optional theme --> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
+
+  <!-- jQuery UI Theme-->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/pepper-grinder/jquery-ui.min.css">
+         <title>Assignment 8</title>
+        
+</head>
+
+
+<body class="main">
+        
+
+        <h1>Dynamic Multiplication Table</h1>
+
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Multiplication Table</a> </li>
+            </ul>
+            <div id="tabs-1">
+               <!--Using a form to take 4 values as input -->
+                <form id="mulTab" > 
+                    <p>Horizonal Row</p>
+                    <p>Min Range: <input type="text" size="10" value="0" id="rowSt" name="rowSt"/></p>
+                    <div id="1"></div>
+                    
+                    <p>Max Range: <input type="text" size="10" value="0" id="rowEn" name="rowEn"/></p>
+                    <div id="2"></div>
+                    
+                    <p>Vertical Column</p>
+                    <p>Minimum Range:<input type="text" size="10" value="0" id="colSt" name="colSt"/></p>
+                    <div id="3"></div>
+
+                    <p>Max Range: <input type="text" size="10" value="0" id="colEn" name="colEn"/></p>
+                    <div id="4"></div>
+                    
+                    <input type="submit" id="submit" value="submit" />
+                    
+                </form>
+
+     <p><button id="selected_tabs">Remove selected tabs</button></p>
+                <div id="check"></div>
+                <button id="remove_tabs">Remove all tabs</button>
+                
+
+                
+
+            </div>
+        </div>
+    
+        <!--  Footer -->
+    
+        <div class="clearfooter"></div>
+        
+    <!--jquery java script -->
+    
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="jquery.validate.js"></script>
+        <script src="jquery-ui.js"></script>
+        <script src='hw8.js'></script>
+
+         </body>
+</html>
