@@ -1,0 +1,55 @@
+/**
+  Alekya Venkatapuram
+          Alekya_Venkatapuram@student.uml.edu
+           GUI-I assignment 9
+            12/06/2016
+ */
+h1
+{
+    color: Green;
+    text-align: center;
+}
+body
+{
+    background : red;
+}
+#scrabble1, #scrabble2
+{
+    margin-left: 50px;
+    margin-right: 50px;
+
+    width: 1800px;
+    height: 160px;
+}
+.tile
+{
+    width: 95px;
+    height: 140px;
+    margin-left: 15px;
+}
+#tiles
+{
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 500px;
+}
+/*Box containing word text and submit button*/
+#word_display
+{
+    background : red;
+    width: 400px;
+    height: 200px;
+    margin-left: 500px;
+    margin-right: 500px;
+    text-align: left;
+}
+#submit_button
+{
+    margin-top: 40px;
+    color:chocolate;
+}
+label
+{
+    font-size: 40px;
+    color: green;
+}
