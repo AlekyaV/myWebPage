@@ -1,0 +1,130 @@
+/*
+        Alekya Venkatapuram
+        Alekya_Venkatapuram@student.uml.edu
+        GUI-I assignment 3
+        12/09/2016
+ */
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {display:block}
+
+/* Styling the body by giving backgrounf color white and background image as provided in the source zip,to replicate the handout. */
+body 
+{ 
+       background-color: #FFFFFF;
+       background-image: url(ptrbackground.jpg);
+       color: #666666;
+	   font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Setting up the width and min-width as 80% and 600px as given in the requirements
+  The minimum width so that below which the page remains unchanged would be 600px
+The background color for the wrapper part of div is also set to a light shade of blue*/
+#wrapper
+{ 
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        min-width: 600px;
+		background-color: #90C7E3;
+
+}
+
+/* To set the background image and position of it in the header part of the poster, to replicate the handout */
+header
+{ 
+        background-color: #000033;
+        background-image: url(sunset.jpg);
+        background-position: right;
+        background-repeat: no-repeat;
+        color: #FFFFFF;
+}
+
+nav 
+{ 
+        padding: 19px 19px 5px 19px;
+        font-weight: bold;
+        float: left;
+        width: 160px;
+}
+
+nav ul 
+{ 
+        list-style-type: none;
+        margin: 0;
+	    padding-left: 0;
+	    font-size: 16px;
+	
+}
+
+/* The list colours when hovered on when alredy visited and originally before visiting, are all styled here */
+nav a 
+{ 
+        text-decoration: none; 
+}
+        nav a:link{color:#000033;}
+        nav a:visited{color:#344873;}
+        nav a:hover{color:#FFFFFF;} 
+
+/* To style the content part of the poster with a white background*/
+#content
+{ 
+        background-color: #FFFFFF;
+        margin-left: 190px;
+	    padding: 1px 20px 20px 30px; 
+                
+}
+ /* To style each of the 3 headings */
+h1 
+{  
+         margin-bottom: 0;
+         font-family: Georgia, "Times New Roman", serif;
+}
+
+h2 
+{ 
+        color: lightblue;
+        font-family: Georgia, "Times New Roman", serif;
+}
+
+h3 
+{ 
+        color: #000033;
+        font-family: Georgia, "Times New Roman", serif;
+}
+
+/* position of the bullet points of the text */
+#content ul 
+{ 
+        list-style-image: url(marker.gif); 
+        list-style-position: inside;
+}
+
+/* To position the image left of the content and give space through margin, between content and image */
+#content img
+{
+        float: left;
+        display: inline-block;
+        margin: 15px 15px;
+}
+
+#contact 
+{ 
+        font-size: 14px; 
+}
+
+.resort 
+{
+        color: #5C7FA3; 
+        font-weight: bold;
+}	   
+
+/* To position footer such that it appears below the image and content and fonts as per handout */
+footer 
+{
+        background-color: #FFFFFF;
+        padding: 20px;
+        font-size: 75%;
+	    font-style: italic;
+	    font-family: Georgia, "Times New Roman", serif; 
+	    margin-left: 190px;
+}
