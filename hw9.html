@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<!-- Alekya Venkatapuram
+          Alekya_Venkatapuram@student.uml.edu
+           GUI-I assignment 9
+            12/06/2016
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- links the CSS source and jquery librays for this HTML document -->
+    <link type="text/css" rel="stylesheet" href="hw9.css"/>
+    <!-- jQuery ui css -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <!--jQuery ui theme -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/dark-hive/jquery-ui.css">
+    <!--jQuery Libary-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!--jQuery validation plugin-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+    <!--jQuery_UI Libary-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+
+    <title>Assignment 9</title>
+</head>
+<body>
+
+
+<h1>Scrabble Game</h1>
+<br><br>
+
+<!-- Scrabble board slots -->
+<div id="scrabbleBoard">
+    <img id="0" class="scrabble_slots" src="blank.png">
+    <img id="1" class="scrabble_slots" src="blank.png">
+    <img id="2" class="scrabble_slots" src="dblword.png">
+    <img id="3" class="scrabble_slots" src="blank.png">
+    <img id="4" class="scrabble_slots" src="blank.png">
+    <img id="5" class="scrabble_slots" src="blank.png">
+    <img id="6" class="scrabble_slots" src="dblltr.png">
+    <img id="7" class="scrabble_slots" src="blank.png">
+    <img id="8" class="scrabble_slots" src="dblltr.png">
+    <img id="9" class="scrabble_slots" src="blank.png">
+    <img id="10" class="scrabble_slots" src="blank.png">
+    <img id="11" class="scrabble_slots" src="blank.png">
+    <img id="12" class="scrabble_slots" src="dblword.png">
+    <img id="13" class="scrabble_slots" src="blank.png">
+    <img id="14" class="scrabble_slots" src="blank.png">
+</div>
+<div id="scrabbleBoard2">
+    <img id="15" class="scrabble_slots" src="blank.png">
+    <img id="16" class="scrabble_slots" src="blank.png">
+    <img id="17" class="scrabble_slots" src="dblword.png">
+    <img id="18" class="scrabble_slots" src="blank.png">
+    <img id="19" class="scrabble_slots" src="blank.png">
+    <img id="20" class="scrabble_slots" src="blank.png">
+    <img id="21" class="scrabble_slots" src="dblltr.png">
+    <img id="22" class="scrabble_slots" src="blank.png">
+    <img id="23" class="scrabble_slots" src="dblltr.png">
+    <img id="24" class="scrabble_slots" src="blank.png">
+    <img id="25" class="scrabble_slots" src="blank.png">
+    <img id="26" class="scrabble_slots" src="blank.png">
+    <img id="27" class="scrabble_slots" src="dblword.png">
+    <img id="28" class="scrabble_slots" src="blank.png">
+    <img id="29" class="scrabble_slots" src="blank.png">
+</div>
+
+<!-- Here is where the tiles are generated -->
+<div id="tile_rack"></div>
+<br>
+<!-- For word and submit action -->
+<div id="wordBox">
+    <br>
+    <label>Word:</label>
+    <label id="word"></label>
+    <br>
+    <label>Score:</label>
+    <label id="score"></label>
+    <br>
+    <button id="submit_button">Submit</button>
+</div>
+
+<!--javascript for this html file-->
+<script src="hw9.js"></script>
+
+</body>
+</html>
