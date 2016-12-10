@@ -21,15 +21,15 @@ var dictionary = {};
 //On user submit check word is valid
 function submit(event)
 {
-    console.log("Submit Successful: " + $("#word").text());
+   // console.log("Submit Successful: " + $("#word").text());
 
     //to check if the word is in the dictionary file
-    if(!dictionary[$("#word").text().toLowerCase()] == true)
-    {
-        alert("Word is not in dict");
-    }
-    else
-    {
+   // if(!dictionary[$("#word").text().toLowerCase()] == true)
+   // {
+     //   alert("Word is not in dict");
+   // }
+   // else
+   // {
         var numberTilesRemoved = 0;
         
         score += tempScore;
